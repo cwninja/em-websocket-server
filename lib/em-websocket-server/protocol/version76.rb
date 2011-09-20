@@ -8,6 +8,7 @@ module EM
           response = "HTTP/1.1 101 Web Socket Protocol Handshake\r\n"
           response << "Upgrade: WebSocket\r\n"
           response << "Connection: Upgrade\r\n"
+          response << "Content-Type: text/plain\r\n"
           response << "Sec-WebSocket-Origin: #{origin}\r\n"
           response << "Sec-WebSocket-Location: #{scheme}://#{host}#{path}\r\n"
   
